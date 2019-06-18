@@ -15,24 +15,11 @@ const todos = [
   },
 ];
 
-// export default function todoReducer(todos=[], action) {
-//   switch(action.type){
-//     case (ADD_TODO):
-//       return todos.concat(action.payload);
-//     case (MARK_COMPLETED):
-//     todos[action.payload].complete = !todos[action.payload].complete;
-//     return todos;
-//     default: 
-//     return todos;
-//   }
-// }
-// console.log(todos)
-
 export default function todoReducer(state = todos, action) {
   console.log(state);
     switch (action.type){
       case(DELETE_TODO):
-        return state.filter(todo => todo.is !== action.payload);
+        return state.filter(todo => todo.id !== action.payload);
       case(ADD_TODO):
        return [...state, action.payload];
       case(MARK_COMPLETED):

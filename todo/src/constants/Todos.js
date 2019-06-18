@@ -1,6 +1,6 @@
 import uuid from 'uuid';
 
-export default [
+const todos = [
   {
     id: uuid(),
     value: "Bake Cookies",
@@ -12,3 +12,5 @@ export default [
     completed: false,
   },
 ];
+
+export default todos;
