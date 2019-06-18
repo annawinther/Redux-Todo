@@ -1,7 +1,7 @@
-import Todos from './constants/Todos';
+import Todos from '/Users/Anna/Lambda School/Sprint 9 - Redux/Day 2 - Redux Fundam2/Redux-Todo/todo/src/constants/Todos.js';
 import * as types from './actionTypes';
 
-function todoReducer(state = Todos, action) {
+export default function todoReducer(state = Todos, action) {
     switch (action.type){
       case(types.DELETE_TODO):
         return state.filter(todo => todo.is !== action.payload);

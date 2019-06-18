@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import { todoReducer } from './states/reducers';
+import  todoReducer  from './states/reducers';
 
 // STEP 4: COMBINE REDUCERS
 // use combineReducers to create a root reducer off of our reducers
