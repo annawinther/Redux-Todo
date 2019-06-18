@@ -10,7 +10,7 @@ import  todoReducer  from './states/reducers';
 // STEP 4: COMBINE REDUCERS
 // use combineReducers to create a root reducer off of our reducers
 const combinedReducers = combineReducers({ 
-    todo: todoReducer, 
+    todos: todoReducer, 
    })
  
  // STEP 5: CREATE THE REDUX STORE
