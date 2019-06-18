@@ -8,7 +8,7 @@ import './App.css';
 // The less state the better. Avoid redundant slices, like slices
 // that could be computed from other slices!
 
-export function App() {
+export default function App() {
   return (
     <div>
       <Todo />
