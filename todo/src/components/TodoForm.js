@@ -6,9 +6,8 @@ export class TodoForm extends React.Component {
     valueRef = React.createRef();
 
     onAddTodo = () => {
-        this.props.addTodo(
-            this.valueRef.current.value,
-        );
+        // debugger;
+        this.props.addTodo( this.valueRef.current.value );
     }
     render(){
         return (
