@@ -10,13 +10,11 @@ export class TodoForm extends React.Component {
             this.valueRef.current.value,
         );
     }
-
     render(){
         return (
             <div>
-                <h3>You have {this.props.numTodos} tasks to complete. Add a new task to the list!</h3>
                 <div>
-                    <em>Todo</em>
+                    <em>Todo </em>
                     <input ref={this.valueRef} type="text"/>
                 </div>
                 <div>
@@ -26,9 +24,5 @@ export class TodoForm extends React.Component {
         )
     }
 }
-function mapStatetoProps(state){
-    return {
-        numTodos: state.numTodos,
-    }
-}
-export default connect(mapStatetoProps, { addTodo })(TodoForm);
+
+export default connect(null, { addTodo })(TodoForm);

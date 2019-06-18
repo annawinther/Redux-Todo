@@ -1,10 +1,11 @@
-import Todos from '/Users/Anna/Lambda School/Sprint 9 - Redux/Day 2 - Redux Fundam2/Redux-Todo/todo/src/constants/Todos.js';
-import {ADD_TODO, DELETE_TODO, MARK_COMPLETED } from './actionTypes';
+import todos from '../constants/todos.js';
+import {ADD_TODO, MARK_COMPLETED } from './actionTypes';
 
-export default function todoReducer(state = Todos, action) {
+export default function todoReducer(state = todos, action) {
+  console.log(todos);
     switch (action.type){
-      case(DELETE_TODO):
-        return state.filter(todo => todo.is !== action.payload);
+      // case(DELETE_TODO):
+      //   return state.filter(todo => todo.is !== action.payload);
       case(ADD_TODO):
        return [...state, action.payload];
       case(MARK_COMPLETED):
