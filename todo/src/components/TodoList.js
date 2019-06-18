@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import TodoItem from './TodoItem';
 // STEP 8: HERE ARE THE NEEDED ACTION DISPATCHERS
 import { addTodo, markComplete, deleteTodo } from '../states/actionDispatchers';
-// import todos from '../constants/todos';
 
  class TodoList extends React.Component {
     valueRef = React.createRef();

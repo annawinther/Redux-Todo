@@ -1,6 +1,4 @@
 import React from 'react';
-// import { markComplete } from '../states/actionDispatchers';
-// import { connect } from 'react-redux';
 
 export default function TodoItem({ todo, deleteTodo, markComplete })  {
     return (
