@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Todo from './Todo';
+import TodoItem from './TodoItem';
 // STEP 8: HERE ARE THE NEEDED ACTION DISPATCHERS
 import * as actionDispatchers from '../states/actionDispatchers';
 
-export class Todos extends React.Component {
+export class TodoList extends React.Component {
     render(){
         const todos = this.props.todos || [];
 
@@ -14,7 +14,7 @@ export class Todos extends React.Component {
                 <div>
                     {
                         todos.map(todo => (
-                            <Todo 
+                            <TodoItem 
                                 key={todo.id}
                                 // STEP 11: WE GET THE SLICES OF STATE FROM PROPS
                                 todo={todo}
@@ -43,4 +43,4 @@ export default connect(
     mapStateToProps,
 // STEP 12: INJECT THE ACTION DISPATCHERS AS 2ND ARG TO CONNECT
     actionDispatchers,
-)(Todos);
+)(TodoList);

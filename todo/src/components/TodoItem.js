@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Todo extends React.Component {
+export default class TodoItem extends React.Component {
     render() {
         const {
             todo,
