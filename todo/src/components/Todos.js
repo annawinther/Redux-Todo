@@ -35,7 +35,7 @@ function mapStateToProps(state) {
     // STEP 9: FLESH OUT
     return {
         todos: state.todos,
-    }
+    };
 }
 
 export default connect(

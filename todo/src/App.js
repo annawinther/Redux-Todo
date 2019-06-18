@@ -1,6 +1,6 @@
 import React from 'react';
-import Todo from './components/Todo';
 import TodoForm from './components/TodoForm';
+import Todos from './components/Todos';
 
 import './App.css';
 
@@ -11,7 +11,7 @@ import './App.css';
 export default function App() {
   return (
     <div>
-      <Todo />
+      <Todos />
       <TodoForm />
     </div>
   )
