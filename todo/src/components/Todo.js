@@ -6,14 +6,16 @@ export default class Todo extends React.Component {
             todo,
             deleteTodo,
             markComplete,
-        } = this.state;
+         } = this.state;
 
         return (
-            <div className="value">{todo.value}</div>
+            <div className="todolist">
+                <div className="value">{todo.value}</div>
 
-            <div>
-                <button onClick={() => deleteTodo(todo.id)}>Delete</button>
-                <button onClick={() => markComplete(todo.id)}>Mark as Complete</button>
+                <div>
+                    <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+                    <button onClick={() => markComplete(todo.id)}>Mark as Complete</button>
+                </div>
             </div>
         )
     }
