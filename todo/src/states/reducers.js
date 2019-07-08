@@ -10,13 +10,12 @@ const todos = [
   },
   {
     id: uuid(),
-    value: "Walk the dog.",
+    value: "Walk the dog",
     completed: false,
   },
 ];
 
 export default function todoReducer(state = todos, action) {
-  console.log(state);
     switch (action.type){
       case(DELETE_TODO):
         return state.filter(todo => todo.id !== action.payload);

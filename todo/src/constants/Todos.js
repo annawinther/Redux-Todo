@@ -8,7 +8,7 @@ const todos = [
   },
   {
     id: uuid(),
-    value: "Walk the dog.",
+    value: "Walk the dog",
     completed: false,
   },
 ];

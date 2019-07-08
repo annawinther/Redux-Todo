@@ -22,6 +22,41 @@
 .App-link {
   color: #61dafb;
 }
+#root{
+  /* background: #f4f0d9; */
+  height: 500px;
+}
+.todo-list{
+  margin: 10px;
+}
+.todo-app{
+ /* border: 1px solid black; */
+ /* background-color: white; */
+ width: 100%;
+ 
+ margin: 0 auto;
+ text-align: center;
+}
+.todo{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 0 auto;
+  margin-left: 25%;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+}
+
+.btn1{
+  margin-left: 10px;
+}
+.btn2{
+  margin-left: 10px;
+}
+
+.new-todo input{
+  font-size{}
+}
 
 @keyframes App-logo-spin {
   from {

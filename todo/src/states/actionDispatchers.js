@@ -11,12 +11,7 @@ export function deleteTodo(id) {
         payload: id,
     }
 }
-// export function addTodo(todo) {
-//     return{
-//         type: ADD_TODO,
-//         payload: todo
-//     };
-// };
+
 export function markComplete(id) {
     return {
         type: MARK_COMPLETED,

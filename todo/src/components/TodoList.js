@@ -8,26 +8,16 @@ import { addTodo, markComplete, deleteTodo } from '../states/actionDispatchers';
     valueRef = React.createRef();
 
     onAddTodo = () => {
-        // debugger;
         this.props.addTodo( 
             this.valueRef.current.value 
         );
+        this.valueRef.current.value ='';
     }
 
     render(){
-        console.log(this.props);
         return (
-            <div>
-                <h3>My Todo List</h3>
-                <div>
-                    <div>
-                        <em>Todo </em>
-                        <input ref={this.valueRef} type="text"/>
-                    </div>
-                    <div>
-                        <button onClick={this.onAddTodo}>Add Task</button>
-                    </div>
-                </div>
+            <div className="todo-list">
+                <h3>My Todo List</h3>     
                 <div>
                     {
                         this.props.todos.map(todo => 
@@ -42,7 +32,14 @@ import { addTodo, markComplete, deleteTodo } from '../states/actionDispatchers';
                         )
                     }
                 </div>
-
+                <div className="new-todo">
+                    <h3>Add a new task</h3>
+                    <div>
+                        <em>Todo: </em>
+                        <input ref={this.valueRef} type="text"/>
+                        <button onClick={this.onAddTodo}>Add Task</button>
+                    </div>
+                </div>
             </div>     
         )
     }

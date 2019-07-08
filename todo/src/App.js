@@ -8,8 +8,7 @@ import './App.css';
 
 export default function App() {
     return (
-      <div>
-        <h3>Reddux Todo</h3>
+      <div className="todo-app">
         <TodoList />
       </div>
     );
